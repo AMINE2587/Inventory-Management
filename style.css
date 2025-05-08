@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+    color: white;
+}
+body{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    background:linear-gradient(to right, rgb(20, 0, 42), rgb(0, 98, 151));
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+header h2{
+    font-size: 32px;
+}
+main{ 
+    height: 75vh;
+}
+.container{
+    height: 40vh;
+}
+.eqp-nom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    gap: 20px;
+}
+.eqp-nom input{
+    color: white;
+    background: none;
+    border: 1.5px solid white;
+    padding: 15px;
+    width: 35%;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: border 0.4s ease-in-out;
+}
+.eqp-nom input::placeholder{
+    color: white;
+}
+.eqp-nom input:focus {
+    outline: none;
+    border: solid rgb(2, 232, 236) 1.5px;
+}
+.qt-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    gap: 20px;
+}
+.qt-price input{
+    color: white;
+    background: none;
+    border: 1.5px solid white;
+    padding: 15px;
+    width: 35%;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: border 0.4s ease-in-out;
+}
+.qt-price input::placeholder{
+    color: white;
+}
+.qt-price input:focus{
+    outline: none;
+    border: solid rgb(2, 232, 236) 1.5px;
+}
+.btn-create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+.btn-create button{
+    padding: 10px;
+    width: 135px;
+    color: white;
+    background: none;
+    border: white solid 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.4s ease-in-out,
+    color 0.4s ease-in-out,
+    transform 0.4s ease-in-out;
+}
+.btn-create button:hover{
+    background-color: white;
+    color: rgb(37, 0, 173);
+    transform: scale(1.05);
+}
+.informations{
+    margin: auto;
+    width: 75%;
+    height: 40vh;
+}
+.informations table{
+    text-align: center;
+    width: 100%;
+   
+
+}
+.informations table tr{
+    border: white solid 1.5px;
+    
+    
+}
+.informations table tr td{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid white;
+}
+.informations table tr td button{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+}
+#table-up td{
+    font-size: 18px;
+    padding: 5px;
+    color: rgb(0, 255, 110);
+    border-radius: 2px;
+}
+.table-btn{
+    transition: all 0.4s;
+}
+.table-btn:hover{
+    background: white;
+}
+.table-btn button{
+    padding: 5px;
+    transition: all 0.4s;
+}
+.table-btn button:hover{
+    color: blueviolet;
+}
