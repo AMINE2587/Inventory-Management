@@ -147,3 +147,90 @@ main{
 .table-btn button:hover{
     color: blueviolet;
 }
+.edit-info{
+    border: 2px solid white;
+    background: none;
+    margin: auto;
+    width: 55%;
+    height: 40vh;
+    padding: 5px;
+    border-radius: 25px 0px 25px 0px;
+}
+.eqp-catg-edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 15vh;
+    padding: 10px;
+}
+.eqp-catg-edit input{
+   color: white;
+   background: none;
+   border: 1.5px solid white;
+   padding: 15px;
+   width: 36%;
+   border-radius: 15px;
+   font-family: 'Poppins', sans-serif;
+   transition: border 0.4s ease-in-out;
+}
+.eqp-catg-edit input:focus{
+    outline: none;
+    border: solid rgb(2, 232, 236) 1.5px;
+}
+.eqp-catg-edit input::placeholder{
+  color: white;
+}
+.quant-price-edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 10vh;
+}
+
+.quant-price-edit input{
+       color: white;
+    background: none;
+    border: 1.5px solid white;
+    padding: 15px;
+    width: 35%;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: border 0.4s ease-in-out;
+}
+.quant-price-edit input:focus{
+    outline: none;
+    border: solid rgb(2, 232, 236) 1.5px;
+}
+.quant-price-edit input::placeholder{ 
+    color: white;
+}
+.save-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 10vh;
+}
+.save-btns button{
+    padding: 7px;
+    width: 125px;
+    color: white;
+    background: none;
+    border: white solid 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.4s ease-in-out,
+    color 0.4s ease-in-out,
+    transform 0.4s ease-in-out;
+}
+.save-btns button:hover{
+    background-color: white;
+    color: rgb(37, 0, 173);
+    transform: scale(1.05);
+}
+table{
+    margin-top: 30px;
+}
