@@ -15,10 +15,17 @@
         <div id="edit-container" style="display: none;" class="edit-info">
             <div class="eqp-catg-edit">
                 <input type="text" placeholder="Name" id="edit-name">
-                <input type="text" name="" id="edit-category" placeholder="Category">
+                <select id="edit-category">
+                    <option value="" disabled selected>Select category</option>
+                    <option value="desktop">Desktop Computer</option>
+                    <option value="printer">Printer</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="Scanner">Scanner</option>
+                    <option value="Monitor">Monitor</option>
+                </select>
             </div>
             <div class="quant-price-edit">
-                <input type="number" name="" id="prix-edit" placeholder="Prix">
+                <input type="number" id="prix-edit" placeholder="Prix">
                 <input type="number" id="quan-edit" placeholder="Qauntite">
             </div>
             <div class="save-btns">
@@ -26,19 +33,28 @@
                 <button onclick="clearEdit()" id="clear">Clear</button>
             </div>
         </div>
+
         <div id="container" class="container">
             <div class="eqp-nom">
-                <input placeholder="Nom de L'equipement"  type="text" name="" id="eqp-name">
-                <input placeholder="Category" type="text" id="category">
+                <input placeholder="Nom de L'equipement" type="text" id="eqp-name">
+                <select  id="category">
+                    <option value="" disabled selected>Select category</option>
+                    <option value="desktop">Desktop Computer</option>
+                    <option value="printer">Printer</option>
+                    <option value="laptop">Laptop</option>
+                    <option value="Scanner">Scanner</option>
+                    <option value="Monitor">Monitor</option>
+                </select>
             </div>
             <div class="qt-price">
                 <input placeholder="Prix" type="number" id="price">
-                <input placeholder="Qauntite"  type="number" name="" id="qt">
+                <input placeholder="Qauntite" type="number" id="qt">
             </div>
             <div class="btn-create">
                 <button id="create-btn">Create</button>
             </div>
         </div>
+
         <div class="informations">
             <table>
                 <tr id="table-up">
@@ -50,14 +66,11 @@
                     <td>Delete</td>
                 </tr>
                 <tbody id="tbody">
-                
-            </tbody>
+                </tbody>
             </table>
         </div>
     </main>
 
-         
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -20,9 +20,7 @@ function clearData() {
   qt.value = '';
 }
 
-
 let product = localStorage.prodInfo ? JSON.parse(localStorage.prodInfo) : [];
-
 
 function createProduct() {
   let productInfo = {
@@ -34,7 +32,6 @@ function createProduct() {
   product.push(productInfo);
   localStorage.setItem("prodInfo", JSON.stringify(product));
 }
-
 
 function usingInfo() {
   let table = '';
@@ -53,7 +50,6 @@ function usingInfo() {
   document.getElementById('tbody').innerHTML = table;
 }
 
-
 createBtn.onclick = function () {
   if (
     proName.value.trim() !== '' &&
@@ -69,13 +65,11 @@ createBtn.onclick = function () {
   }
 };
 
-
 function delItem(i) {
   product.splice(i, 1);
   localStorage.setItem("prodInfo", JSON.stringify(product));
   usingInfo();
 }
-
 
 function editItem(i) {
   currentIndex = i;
@@ -88,7 +82,6 @@ function editItem(i) {
   qauntityEdit.value = product[i].Qauntity;
 }
 
-
 function saveItem(i) {
   product[i].Name = editName.value.trim();
   product[i].Category = categoryEdit.value.trim();
@@ -100,7 +93,6 @@ function saveItem(i) {
   editContainer.style.display = 'none';
   usingInfo();
 }
-
 
 saveBtn.onclick = function () {
   if (currentIndex !== null) {
@@ -116,4 +108,4 @@ function clearEdit() {
   qauntityEdit.value = '';
 }
 
-usingInfo(); 
+usingInfo();

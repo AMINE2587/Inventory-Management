@@ -57,6 +57,23 @@ main{
     height: 10vh;
     gap: 20px;
 }
+.eqp-nom select{
+    background: none;
+    padding: 15px;
+    border: white solid 2px;
+    border-radius: 10px;
+    width: 37.5%;
+    transition: border 0.4s ease-in-out;
+}
+.eqp-nom select:focus{
+    border: rgb(102, 83, 83) solid 2px;
+    outline: none;
+
+}
+.eqp-nom select option{
+    background: none;
+    color: black;
+}
 .qt-price input{
     color: white;
     background: none;
@@ -106,8 +123,11 @@ main{
 .informations table{
     text-align: center;
     width: 100%;
-   
-
+}
+@media (min-width: 300px) and (max-width: 720px){
+    .informations{
+        width: 100%;
+    }
 }
 .informations table tr{
     border: white solid 1.5px;
@@ -173,6 +193,22 @@ main{
    border-radius: 15px;
    font-family: 'Poppins', sans-serif;
    transition: border 0.4s ease-in-out;
+}
+.eqp-catg-edit select{
+    background: none;
+    padding: 15px;
+    border: white solid 2px;
+    border-radius: 10px;
+    width: 37.5%;
+    transition: border 0.4s ease-in-out;
+}
+.eqp-catg-edit select:focus{
+    border: rgb(102, 83, 83) solid 2px;
+    outline: none;
+}
+.eqp-catg-edit select option{
+    background: none;
+    color: black;
 }
 .eqp-catg-edit input:focus{
     outline: none;
