@@ -41,7 +41,7 @@ function usingInfo() {
         <td>${product[i].Name}</td>
         <td>${product[i].Category}</td>
         <td>${product[i].Qauntity}</td>
-        <td>${product[i].Price}</td>
+        <td>${product[i].Price}<span> DH</span></td>
         <td class="table-btn"><button onclick="editItem(${i})">Edit</button></td>
         <td class="table-btn"><button onclick="delItem(${i})">Delete</button></td>
       </tr>
@@ -83,16 +83,24 @@ function editItem(i) {
 }
 
 function saveItem(i) {
-  product[i].Name = editName.value.trim();
-  product[i].Category = categoryEdit.value.trim();
-  product[i].Price = prixEdit.value.trim();
-  product[i].Qauntity = qauntityEdit.value.trim();
+  if(editName.value.trim() !== '' &&
+     categoryEdit.value.trim() !== '' &&
+     prixEdit.value.trim() !== '' &&
+     qauntityEdit.value.trim() !== ''){
+     product[i].Name = editName.value.trim();
+     product[i].Category = categoryEdit.value.trim();
+     product[i].Price = prixEdit.value.trim();
+     product[i].Qauntity = qauntityEdit.value.trim();
 
-  localStorage.setItem("prodInfo", JSON.stringify(product));
-  container.style.display = 'block';
-  editContainer.style.display = 'none';
-  usingInfo();
-}
+     localStorage.setItem("prodInfo", JSON.stringify(product));
+     container.style.display = 'block';
+     editContainer.style.display = 'none';
+     usingInfo();
+     }else{
+      alert('please complete the infomations');
+     };
+    usingInfo();
+};
 
 saveBtn.onclick = function () {
   if (currentIndex !== null) {
